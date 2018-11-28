@@ -1,0 +1,274 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+//@include media-breakpoint-up(sm) { ... }
+//@include media-breakpoint-up(md) { ... }
+//@include media-breakpoint-up(lg) {
+//  .features_img {
+//    display: none;
+//  }
+// }
+//@include media-breakpoint-up(xl) {
+//  .features_img {
+//    display: block;
+//  }
+//}
+
+//MY Media
+@media (max-width: 1200px) {
+  .features_img {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+/*  .features_list {
+    padding-right: 18%;
+  }*/
+  .footer .btn-orange {
+    margin-left: auto;
+  }
+  .footer .address {
+    text-align: right;
+  }
+  .footer-info .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-bottom {
+    padding-bottom: 25px;
+    padding-top: 90px;
+  }
+  .service .right-block {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .service .left-block {
+    justify-content: center;
+  }
+  .service .right-block {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-light .navbar-toggler {
+    border-color: transparent!important;
+  }
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+  .navbar-nav {
+    margin: 0;
+    padding: 40px;
+  }
+  .search {
+    margin: 0 auto;
+  }
+  .top-banner::after {
+    display: none;
+  }
+  .features_img {
+    display: none;
+  }
+  .title {
+    font-size: 45px;
+    text-align: center;
+  }
+  .info-line {
+    display: none;
+  }
+  .top-banner_phone {
+    display: block;
+    color: $white;
+    margin: 0 auto;
+    padding: 12px 17px;
+    border: 1px solid rgba(197, 215, 255, 0.33);
+    border-radius: 5px;
+  }
+  .top-banner_lang {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+
+    .top-banner_lang-ru a {
+      color: $white;
+      margin: 8px;
+    }
+    .top-banner_lang-en a {
+      color: $white;
+      margin: 8px;
+    }
+  }
+  .navbar-brand .text {
+    display: none;
+  }
+  .navbar-brand img {
+    padding: 15px;
+  }
+  .top-banner {
+    padding-bottom: 130px;
+    .btn-orange {
+      margin: 0 auto!important;
+    }
+  }
+  .top-banner_content {
+    margin: 90px 0 20px;
+  }
+  .title-2 {
+    text-align: center;
+    font-size: 31px;
+    display: block;
+    margin: 25px auto;
+  }
+  .about_text .text {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .about {
+    position: relative;
+  }
+  //.about::after {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  background-image: linear-gradient(rgba(255,255,255,0) 30%, rgba(255,255,255,1)73%);
+  //  background-clip: text;
+  //  z-index: 1;
+  //}
+  //.about_text a {
+  //  z-index: 5;
+  //}
+/*  .service .left-block,
+  .service .right-block {
+    padding-left: 15%;
+  }*/
+  p.text,
+  ul.circle-orange {
+    position: relative;
+  }
+  .text-blur-light::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(255,255,255, 0) 30%, rgba(255,255,255, .7)73%);
+  }
+  .text-blur-dark::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(22, 47, 67, 0) 30%, rgba(22, 47, 67, .7)73%);
+  }
+  .service-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .opportunities .item,
+  ul.service-items li {
+    flex: 1 1 auto;
+    align-items: center;
+  }
+  .footer .left-block {
+    display: none;
+  }
+  .footer .btn {
+    color: #0b0b0b;
+    padding: 7px 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+  }
+  .footer-index {
+    padding-top: 40px;
+  }
+  .footer .right-block {
+    padding-bottom: 50px;
+  }
+  .footer-bottom {
+    padding: 90px 0 35px;
+  }
+  .copyright {
+    display: none;
+  }
+  .social_icon {
+    justify-content: center;
+    .item::before {
+      border: none;
+    }
+    .item {
+      font-size: 25px;
+    }
+  }
+  .top-banner .description {
+    font-size: 19px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .footer-info {
+    text-align: center;
+  }
+
+}
+@media (max-width: 576px) {
+  .top-banner {
+    background-image: url("../img/index/banner-mob.jpg");
+    background-size: cover;
+  }
+  .title {
+    font-size: 27px;
+    text-align: center;
+  }
+  .top-banner .description {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .title-2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px auto 45px;
+    display: block;
+  }
+  .features_list .circle-orange {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .features_list {
+    padding: 0 20px 30px 60px;
+  }
+  .footer-info .mail,
+  .footer-info .phone {
+    display: block;
+    padding: 0;
+  }
+  .footer .phone,
+  .footer .address {
+    font-size: 18px;
+  }
+}

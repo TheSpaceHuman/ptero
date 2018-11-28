@@ -1,0 +1,105 @@
+//HEADER
+.info-line {
+  padding: 12px;
+  background-color: #1d3a53;
+  color: $white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.info-line a {
+  color: $white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.items li,
+.items a,
+.items div {
+  flex: 0 1 auto;
+  padding: 0 5px;
+}
+.lang-ru {
+  margin-left: 15px;
+}
+.text {
+  white-space: normal!important;
+}
+.navbar-brand img {
+  height: 100%;
+}
+.navbar-brand .text {
+  color: $blue;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13.18px;
+  letter-spacing: 0.26px;
+}
+.navbar-brand {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 172px;
+}
+.navbar-brand img,
+.navbar-brand p {
+  flex: 0 1 100%;
+}
+.nav-item {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-item.active a {
+  color: $blue!important;
+}
+.nav-link {
+  color: $dark1!important;
+}
+.nav-item:hover::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $blue;
+  //border-bottom: $blue solid 1px;
+}
+.search a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: $blue;
+  content: "\f002";
+  position: absolute;
+  top: 3px;
+  left: 8px;
+}
+.search {
+  position: relative;
+}
+.search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(23, 23, 24, 0.15);
+  border-radius: 50%;
+  background-color: transparent;
+}
+.navbar-nav {
+  margin-left: 10%;
+  flex-wrap: wrap;
+}
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
