@@ -1,0 +1,124 @@
+/***mobile-menu*/
+a.sidemenu-btn, a.sidemenu-btn2 {
+  color: #000;
+  font-size: 20px;
+}
+
+.sidemenu, .sidemenu2 {
+  overflow: auto;
+  background: #fff;
+  height: 100%;
+  padding: 45px 30px !important;
+  width: 290px !important;
+  z-index: 9999;
+  position: fixed;
+  left: -290px;
+  top: 0;
+  transition: all 1200ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  transition-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.sidemenu.slidein, .sidemenu2.slidein {
+  left: 0;
+}
+
+.close-menu, .close-menu2 {
+  color: #222;
+  float: right;
+  font-size: 16px;
+  height: 30px;
+  width: 30px;
+  text-align: right;
+}
+
+.sidemenu ul, .sidemenu2 ul {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.sidemenu ul li, .sidemenu2 ul li {
+  border-bottom: 1px solid #ebebeb;
+  float: left;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sidemenu ul li a, .sidemenu2 ul li a {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  color: #222222;
+  font-weight: 400;
+}
+
+.sidemenu ul li.menu-item-has-children > a, .sidemenu2 ul li.menu-item-has-children > a {
+  position: relative;
+  width: 100%;
+}
+
+.sidemenu ul ul, .sidemenu2 ul ul {
+  display: none;
+  margin: 0 0 10px;
+  padding: 0 15px;
+}
+
+.sidemenu ul li.menu-item-has-children > a::after {
+  content: "\f107";
+  font-family: fontawesome;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+}
+
+/*.sidemenu ul li:last-child, .sidemenu2 ul li:last-child {
+  border: 0;
+}*/
+
+.sidemenu2 ul li {
+  text-transform: none;
+}
+
+.sidemenu2 ul li a {
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidemenu2 ul li a:hover {
+  color: $blue;
+  text-decoration: none;
+}
+
+.sidemenu2 ul li a span {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+}
+
+.sidemenu2 ul li.menu-item-has-children > a::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-item-has-children.active .drop-menu {
+  display: block;
+}
+.sidemenu2_buttons {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px;
+ }
+.catalog-menu {
+  padding: 5px;
+  margin-left: auto;
+}

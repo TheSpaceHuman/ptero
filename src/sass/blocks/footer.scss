@@ -9,6 +9,13 @@
   font-size: 15px;
   font-weight: 300;
   line-height: 27px;
+  a {
+    color: $white;
+  }
+  a:hover,
+  a:active {
+    color: $orange;
+  }
 }
 
 .footer .phone,
@@ -35,7 +42,7 @@
 
 }
 .footer-info {
-  margin: 55px 0 0;
+  margin: 55px 0 25px;
 }
 .footer-info .mail {
   padding-left: 25px;
@@ -111,6 +118,7 @@
 
 .copyright_text {
   color: #fff;
+  font-size: 13px;
   opacity: .7;
 }
 

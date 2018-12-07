@@ -18,7 +18,7 @@ section.top-menu.p-0
                                 img(src="img/index/lang/en.png" alt="en").lazyload
         .container.p-0
             nav.navbar.navbar-expand-md.navbar-light.p-0
-                a.navbar-brand.py-3(href="#")
+                a.navbar-brand.py-3(href="index.html")
                     img(src="img/index/ptero.svg" alt="Logo" title="Ptero").lazyload
                     p.text Беспилотные авиационные системы и их применение
                 button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
@@ -28,7 +28,7 @@ section.top-menu.p-0
                     ul.navbar-nav
                         li.nav-item
                             .dropdown
-                                a.nav-link#dropdown1(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")  Продукты
+                                a.nav-link#dropdown1(href="products.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")  Продукты
                                 .dropdown-menu(aria-labelledby="dropdown1")
                                     a.dropdown-item(href="#") Птеро-G1 Аэро
                                     a.dropdown-item(href="#") Птеро-G1 Агро
@@ -39,7 +39,7 @@ section.top-menu.p-0
 
                         li.nav-item.active
                             .dropdown
-                                a.nav-link#dropdown2(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Услуги
+                                a.nav-link#dropdown2(href="service.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Услуги
                                 .dropdown-menu(aria-labelledby="dropdown2")
                                     a.dropdown-item(href="#") Аэрофотосъемка топографическаяи мониторинговая
                                     a.dropdown-item(href="#") Тепловизионная аэросъемка
@@ -54,23 +54,23 @@ section.top-menu.p-0
                                 a.nav-link#dropdown3(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Сферы применения
                                 .dropdown-menu(aria-labelledby="dropdown3")
                                     a.dropdown-item(href="#") Сельское хозяйство
-                                        a.dropdown-item(href="#") Лесное хозяйство
-                                        a.dropdown-item(href="#") Нефть и газ
-                                        a.dropdown-item(href="#") Энергетика
-                                        a.dropdown-item(href="#") Водное хозяйство
-                                        a.dropdown-item(href="#") Горное дело
-                                        a.dropdown-item(href="#") Экологический мониторинг
-                                        a.dropdown-item(href="#") Поиск и спасение
+                                    a.dropdown-item(href="#") Лесное хозяйство
+                                    a.dropdown-item(href="#") Нефть и газ
+                                    a.dropdown-item(href="#") Энергетика
+                                    a.dropdown-item(href="#") Водное хозяйство
+                                    a.dropdown-item(href="#") Горное дело
+                                    a.dropdown-item(href="#") Экологический мониторинг
+                                    a.dropdown-item(href="#") Поиск и спасение
                         li.nav-item
                             .dropdown
-                                a.nav-link#dropdown4(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Проекты
+                                a.nav-link#dropdown4(href="project.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Проекты
                         li.nav-item
                             .dropdown
-                                a.nav-link#dropdown5(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Пресс-центр
+                                a.nav-link#dropdown5(href="press-center.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Пресс-центр
                                 .dropdown-menu(aria-labelledby="dropdown5")
-                                    a.dropdown-item(href="#") Новости
-                                    a.dropdown-item(href="#") Статьи
-                                    a.dropdown-item(href="#") Блог
+                                    a.dropdown-item(href="press-center.html#pills-news") Новости
+                                    a.dropdown-item(href="press-center.html#pills-article") Статьи
+                                    a.dropdown-item(href="press-center.html#pills-blog") Блог
                         li.nav-item
                             .dropdown
                                 a.nav-link#dropdown6(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Компания
@@ -84,5 +84,97 @@ section.top-menu.p-0
                         li.nav-item
                             .dropdown
                                 a.nav-link#dropdown7(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ПО и оборудование
-                        li.search
-                            a(href="#")
+                    .search-wrapper#search-wrapper-desk
+                        form.form-group.search-form#search-form-desk
+                            input.form-control.search-input
+                        button.btn-search#btn-search-desk
+                .catalog-menu
+                    a.sidemenu-btn2(href="#" title="Меню") <span class="navbar-toggler-icon"></span>
+                .sidemenu2
+                    a.close-menu2(href="#" title="") <i class="fa fa-times"></i>
+                    ul
+                        li.nav-item
+                            a.nav-link(href="#") Продукты
+                            ul.drop-menu.animated.fadeIn
+                                li.nav-item.first
+                                    a(href="#") Птеро-G1 Аэро
+                                li.nav-item
+                                    a(href="#") Птеро-G1 Агро
+                                li.nav-item
+                                    a(href="#") Птеро-G1 Мониторинг
+                                li.nav-item
+                                    a(href="#") Другие сборки
+                                li.nav-item
+                                    a(href="#") Virtual Surveyor
+                                li.nav-item.last
+                                    a(href="#") PHOTOMOD UAS
+                        li.nav-item
+                            a(href="#") Услуги
+                            ul.drop-menu.animated.fadeIn
+                                li.nav-item.first
+                                    a(href="#") Аэрофотосъемка топографическаяи мониторинговая
+                                li.nav-item
+                                    a(href="#") Тепловизионная аэросъемка
+                                li.nav-item
+                                    a(href="#") Мультиспектральная аэросъемка
+                                li.nav-item
+                                    a(href="#") Мониторинг  линейных  объектов
+                                li.nav-item
+                                    a(href="#") Визуальный мониторинг
+                                li.nav-item.last
+                                    a(href="#") 3D-моделирование
+                                li.nav-item.last
+                                    a(href="#") Обработка данных
+                                li.nav-item.last
+                                    a(href="#") Вычисление объемов
+                        li.nav-item
+                            a(href="#") Сферы применения
+                            ul.drop-menu.animated.fadeIn
+                                li.nav-item.first
+                                    a(href="#") Сельское хозяйство
+                                li.nav-item
+                                    a(href="#") Лесное хозяйство
+                                li.nav-item
+                                    a(href="#") Нефть и газ
+                                li.nav-item
+                                    a(href="#") Энергетика
+                                li.nav-item
+                                    a(href="#") Водное хозяйство
+                                li.nav-item.last
+                                    a(href="#") Горное дело
+                                li.nav-item.last
+                                    a(href="#") Экологический мониторинг
+                                li.nav-item.last
+                                    a(href="#") Поиск и спасение
+                        li.nav-item
+                            a(href="#") Проекты
+                        li.nav-item
+                            a(href="#") Пресс-центр
+                            ul.drop-menu.animated.fadeIn
+                                li.nav-item.first
+                                    a(href="#") Новости
+                                li.nav-item
+                                    a(href="#") Статьи
+                                li.nav-item
+                                    a(href="#") Блог
+                        li.nav-item
+                            a(href="#") Компания
+                            ul.drop-menu.animated.fadeIn
+                                li.nav-item.first
+                                    a(href="#") О компании
+                                li.nav-item
+                                    a(href="#") Контакты
+                                li.nav-item
+                                    a(href="#") Лицензии
+                                li.nav-item
+                                    a(href="#") Реквизиты
+                                li.nav-item
+                                    a(href="#") Вакансии
+                                li.nav-item.last
+                                    a(href="#") Партнеры
+                        li.nav-item
+                            a(href="#") ПО и оборудование
+                    .search-wrapper#search-wrapper-mob
+                        form.form-group.search-form#search-form-mob
+                            input.form-control.search-input
+                        button.btn-search#btn-search-mob

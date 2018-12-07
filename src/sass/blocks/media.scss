@@ -32,11 +32,33 @@
   .features_img {
     display: none;
   }
+  .navbar-expand-md .navbar-collapse {
+    display: none!important;
+  }
+  .search-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    .search-form {
+      margin: 0;
+      order: 2;
+    }
+    .btn-search {
+      margin: 10px auto;
+    }
+  }
 }
 @media (min-width: 769px) {
 /*  .features_list {
     padding-right: 18%;
   }*/
+  .def.no-btn {
+    display: none;
+  }
+  .hide-text {
+    display: block;
+  }
   .footer .btn-orange {
     margin-left: auto;
   }
@@ -91,13 +113,29 @@
   .info-line {
     display: none;
   }
+  .slider-top_item .container {
+    max-width: unset;
+  }
   .top-banner_phone {
     display: block;
     color: $white;
-    margin: 0 auto;
+    margin: 25px auto 0;
     padding: 12px 17px;
     border: 1px solid rgba(197, 215, 255, 0.33);
     border-radius: 5px;
+    z-index: 2;
+  }
+  .top-banner_buttons {
+    width: 100%;
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .slider-top .slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
   }
   .top-banner_lang {
     display: flex;
@@ -121,9 +159,6 @@
   }
   .top-banner {
     padding-bottom: 130px;
-    .btn-orange {
-      margin: 0 auto!important;
-    }
   }
   .top-banner_content {
     margin: 90px 0 20px;
@@ -197,19 +232,19 @@
   .footer .btn {
     color: #0b0b0b;
     padding: 7px 35px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -30px;
+    margin: 50px auto 0;
+    order: 2;
   }
   .footer-index {
     padding-top: 40px;
   }
   .footer .right-block {
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
   }
   .footer-bottom {
-    padding: 90px 0 35px;
+    padding: 35px 0 35px;
   }
   .copyright {
     display: none;
@@ -236,8 +271,8 @@
 }
 @media (max-width: 576px) {
   .top-banner {
-    background-image: url("../img/index/banner-mob.jpg");
-    background-size: cover;
+    //background-image: url("../img/index/banner-mob.jpg");
+    //background-size: cover;
   }
   .title {
     font-size: 27px;
@@ -270,5 +305,14 @@
   .footer .phone,
   .footer .address {
     font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-menu {
+    display: none;
+  }
+  .search-wrapper {
+    display: inline-flex;
+    margin-left: 10px;
   }
 }

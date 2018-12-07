@@ -122,7 +122,7 @@ gulp.task('clean', function () {
 
 
 gulp.task('build', function (callback) {
-  run('clean', 'copy', 'style', 'pug','js','sprite','imagemin', 'server', callback);
+  run('clean', 'copy', 'style', 'pug','js','sprite', 'webp', 'imagemin', 'server', callback);
 });
 
 
