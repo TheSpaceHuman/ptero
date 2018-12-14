@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "bootstrap": "^4.1.3",
+    "fancybox": "^3.0.1",
     "gulp-html-beautify": "^1.0.1",
     "gulp-install": "^1.1.0",
     "jquery": "^3.3.1",

@@ -53,6 +53,9 @@
 /*  .features_list {
     padding-right: 18%;
   }*/
+  .header-img .top-banner_phone {
+    display: none;
+  }
   .def.no-btn {
     display: none;
   }
@@ -314,5 +317,24 @@
   .search-wrapper {
     display: inline-flex;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumb {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .btn-orange {
+    margin: 0 auto;
+  }
+  .products_top-icons_item_img {
+    display: none;
+  }
+  .products_top-icons_items {
+    width: 100%;
+  }
+  .products_top-icons_item_text {
+    border-bottom: 1px solid #343f47;
   }
 }

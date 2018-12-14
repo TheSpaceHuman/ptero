@@ -1,4 +1,12 @@
 section.products
+    .header-img
+        a.top-banner_phone(href="tel:+74995530398") +7 499 553-03-98
+        picture.lazyload
+            source(media="(max-width: 768px)" data-srcset="img/service/header-mob.png")
+            source(media="(min-width: 769px)" data-srcset="img/service/header-img-new.png")
+            img(data-src="img/service/header-img-new.png" alt="header-img").lazyload
+
+
     .container
         .row
             .col-12.p-0
@@ -8,21 +16,160 @@ section.products
                             a(href="index.html") Главная
                         li.breadcrumb-item.active(aria-current="page") Продукты
             h1.title-2.desh.mx-auto Продукты
-            .products_top-icons
+            section.products_top-icons
                 .products_top-icons_items
-                    .products_top-icons_item
+                    a(href="#").products_top-icons_item
                         .products_top-icons_item_img
                             img(data-src="img/products/top-icon-1.png" alt="img-1").lazyload
-                        .products_top-icons_item_text
-                            p Птеро-G1
-                    .products_top-icons_item
+                        p.products_top-icons_item_text
+                            | Птеро-G1
+                    a(href="#").products_top-icons_item
                         .products_top-icons_item_img
                             img(data-src="img/products/top-icon-2.png" alt="img-2").lazyload
-                        .products_top-icons_item_text
-                            p Гиперкоптер
-                    .products_top-icons_item
+                        p.products_top-icons_item_text
+                            | Гиперкоптер
+                    a(href="#").products_top-icons_item
                         .products_top-icons_item_img
                             img(data-src="img/products/top-icon-3.png" alt="img-3").lazyload
-                        .products_top-icons_item_text
-                            p ПО и оборудование
-            .goods-list
+                        p.products_top-icons_item_text
+                            | ПО и оборудование
+            section.goods-category-list
+                .goods-category-list_items
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро для аэрофотосъемки
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро для тепловизионной съемки
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро для видеомониторинга
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро для сельского хозяйства
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро летающая лаборатория
+                    .goods-category-list_item
+                        a.btn.btn-blue(href="#") Птеро летающая лаборатория
+        section.main-goods.row
+            .main-goods_gallery.col-12.col-md-6
+                .slider-for
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-1.png" alt="gallery-img-1" draggable="false")
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-2.jpg" alt="gallery-img-2" draggable="false")
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-3.jpg" alt="gallery-img-3" draggable="false")
+                .slider-nav
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-1.png" alt="gallery-img-1" draggable="false")
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-2.jpg" alt="gallery-img-2" draggable="false")
+                    .item
+                        .img-wrapper
+                            img(src="img/products/ptero-g1-gallery-3.jpg" alt="gallery-img-3" draggable="false")
+            .main-goods_info.col-12.col-md-6
+                .main-goods_info_title «Птеро-G1»  Аэро
+                .main-goods_info_time Длительность полета до 8 часов
+                .main-goods_info_weght Полезная нагрузка до 5 кг"
+                .main-goods_info_description-title Описание модели
+                .main-goods_info_description-text
+                    | "Система специально разработана для выполнения аэросъемочных работ. Использование специализированного программного обеспечения для планирования аэросъемочных маршрутов и профессионального аэросъемочного оборудования позволяют качественно выполнять все виды аэрофотосъемочных работ, в том числе и плановую топографическую аэрофотосъемку местности. "
+                .main-goods_info_btn
+                    button.btn.btn-orange Оформить заявку
+
+
+        section.info-tabs
+            .info-tabs_tab
+                ul#pills-tab.nav.nav-pills(role='tablist')
+                    li
+                        a#pills-description-tab.active.gray-tab(data-toggle='pill', href='#pills-description', role='tab', aria-controls='pills-description', aria-selected='true') Описание
+                    li.gray-tab
+                        a#pills-specifications-tab.gray-tab(data-toggle='pill', href='#pills-specifications', role='tab', aria-controls='pills-specifications', aria-selected='false') Характеристики
+                    li.gray-tab
+                        a#pills-equipment-tab.gray-tab(data-toggle='pill', href='#pills-equipment', role='tab', aria-controls='pills-equipment', aria-selected='false') Комплектация
+            #pills-tabContent.tab-content
+                #pills-description.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-description-tab')
+                    .container.mt-3
+                        .row
+                            .col-12.col-md-6
+                                p.title Общее описание беспилотной авиационной системы
+                                p.text
+                                | Беспилотная авиационная система (БАС) «Птеро-G1» разработана и серийно производится компанией «ПТЕРО». Основой системы является беспилотный летательный аппарат (БЛА) «Птеро-G1», выступающий в качестве носителя полезных нагрузок. В качестве силовой установки используется одноцилиндровый четырехтактный двигатель внутреннего сгорания, оснащенный стартер-генератором. БЛА способен нести полезную нагрузку общей массой до 5 кг. Время нахождения в воздухе со стандартной полезной нагрузкой массой 2 кг - до 8 часов. За это время БЛА может преодолеть до 800 километров.
+                                p.text
+                                | Система специально разработана для выполнения аэросъемочных работ. Использование специализированного программного обеспечения для планирования аэросъемочных маршрутов и профессионального аэросъемочного оборудования позволяют качественно выполнять все виды аэрофотосъемочных работ, в том числе и плановую топографическую аэрофотосъемку местности.
+                            .col-12.col-md-6
+                                iframe(width="100%" height="320px" src="https://www.youtube.com/embed/6okxuiiHx2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                            .col-12
+                                p.text
+                                | Полет БЛА выполняется по командам внешнего пилота или полностью в автоматическом режиме по заранее спланированному маршруту при помощи системы автоматического управления (САУ) собственной разработки PteRoBot. Запуск БЛА выполняется с пневматической катапульты. Для старта необходим свободный коридор с минимальным размером 200х100 м с направлением запуска против ветра. Посадка выполняется по команде внешнего пилота или в заданной точке при помощи парашюта с использованием амортизационной подушки. Для посадки необходима свободная от древесно-кустарниковой растительности площадка размером не менее 100х100 м, без специальной подготовки. Технические характеристики комплекса позволяют осуществлять его эксплуатацию в различных природно-климатических условиях в светлое и темное время суток.
+                                p.text
+                                | Полезная нагрузка, устанавливаемая на борт беспилотного летательного аппарата, обеспечивает решение следующих задач:
+                                ul
+                                    li Плановая топографическая аэрофотосъемка для создания и обновления цифровых топографических планов М 1:1000 – 1:10000
+                                    li Аэрофотосъемка для выполнения различных видов дешифрирования
+                                    li Обзорная, рекогносцировочная, перспективная аэрофотосъемка
+                                    li Тепловизионная и мультиспектральная аэросъемка
+                                    li Аэросъемка с целью дистанционной диагностики технического состояния инженерных сооружений и объектов инфраструктуры (промышленных площадок, воздушных линий электропередачи, автомобильных и железных дорог, трасс газо-, нефте- и продуктопроводов)
+                                    li Ночная аэрофотосъемка в видимом диапазоне с фотовспышкой
+                                p.text
+                                | Помимо выполнения указанных видов работ, БЛА может быть использован в качестве летающей лаборатории, в т.ч. для испытания различного аэросъемочного и навигационного оборудования.
+                                a.link-def
+                                | Области применения системы «Птеро», примеры получаемых исходных данных и результатов обработки
+                                p.text
+                                | В базовой комплектации система поставляется с аэрофотографическим модулем и полностью готова к эксплуатации. Полное описание базового комплекта поставки приведено в разделе <a href="#">Комплектация</a>.
+                                p.text
+                                | По желанию Заказчика система может быть оснащена другим аэросъемочным оборудованием (дополнительно или взамен базового) и программным обеспечением для обработки данных аэросъемки согласно приводимому перечню. Ознакомиться с ним можно в разделе <a href="#">Оборудование и ПО</a>.
+                #pills-specifications.tab-pane.fade(role='tabpanel', aria-labelledby='pills-specifications-tab')
+                    .container.mt-3
+                        .row
+                            table.table
+                                thead
+                                    tr
+                                        td(scope="col") Модель
+                                        td(scope="col") Птеро-G1
+                                tbody
+                                    tr
+                                        td(scope="row") Тип БВС
+                                        td(scope="row") самолетного с ДВС PteRoBot
+                                    tr
+                                        td(scope="row") Минимальная безопасная высота
+                                        td(scope="row") 80 м
+                                    tr
+                                        td(scope="row") Практический потолок
+                                        td(scope="row") 2500 м
+                                    tr
+                                        td(scope="row") Крейсерская скорость
+                                        td(scope="row") 100 км/ч
+                                    tr
+                                        td(scope="row") Взлетная масса с нагрузкой
+                                        td(scope="row") 20 кг
+                                    tr
+                                        td(scope="row") Масса полезной нагрузки
+                                        td(scope="row") до 5 кг
+                                    tr
+                                        td(scope="row") Время полета
+                                        td(scope="row") до 8 ч
+                                    tr
+                                        td(scope="row") Максимальная дальность полета
+                                        td(scope="row") до 800 км
+                                    tr
+                                        td(scope="row") Взлет с катапульты
+                                        td(scope="row") с катапульты
+                                    tr
+                                        td(scope="row") Посадка на парашюте
+                                        td(scope="row") на парашюте
+                                    tr
+                                        td(scope="row") Площадка для взлета посадки
+                                        td(scope="row") 200 х 100 м
+                                    tr
+                                        td(scope="row") Влажность
+                                        td(scope="row") до 95%
+                                    tr
+                                        td(scope="row") Диапазон температур
+                                        td(scope="row") -30…+ 40°С
+
+                #pills-equipment.tab-pane.fade(role='tabpanel', aria-labelledby='pills-equipment-tab')
+                    h2.text-center.mt-3 Комплектация
+

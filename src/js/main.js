@@ -36,6 +36,22 @@ $('.slider-top').slick({
   slidesToScroll: 1
 });
 
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
 //detail
 $('#detail-1').click(function (e) {
   $('#hide-text-1').toggleClass('about-active');
